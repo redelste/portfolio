@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 .backgroundImage{
-    background: url('./assets/Asset3.svg');
     background-repeat: no-repeat;
     background-color: white;
     min-height: 100vh;
@@ -12,9 +11,4 @@
     font-size: calc(10px + 2vmin);
     color: white;
     font-family: 'Arimo', sans-serif;
-    width: 100%;
-}
-
-.gridWidth{
-    width: 100%;
 }

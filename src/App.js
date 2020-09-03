@@ -2,11 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './index.css'
 import './App.css';
-import Asset1 from './assets/Asset3.svg'
-import Projects from './components/Projects'
-import { Grid } from '@material-ui/core';
-import Sidebar from './components/Sidebar'
+import About from './components/About'
+import Home from './components/Home'
 import styles from "./App.module.css"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 // What we need: 
 // About me
@@ -20,33 +24,16 @@ function App() {
     <div>
       {/* <Sidebar></Sidebar> */}
       <header className={styles.backgroundImage}>
-        <Grid container spacing={1}>
-          {/* col */}
-          <Grid item xs={6} style={{ color: "black" }}>
-          </Grid>
-          {/* col 2 */}
-          <Grid container xs={6} style={{ color: "black", height: "100vh" }} justify="flex-Start">
-            <Grid container justify="center" alignItems="flex-start" xs={9} style={{ paddingTop: "10px" }}>
-              <Grid item justify="flex-start" xs={4}>
-                <Sidebar></Sidebar>
-              </Grid>
-              <Grid item xs={8}>
-                Ryan Edelstein
-              </Grid>
-            </Grid>
-            <Grid container style={{ marginTop: "-50px" }}>
-              <Grid item justify="center" xs={4}>
-                About Me
-              </Grid>
-              <Grid item justify="center" xs={4}>
-                Projects
-              </Grid>
-              <Grid item justify="center" xs={4}>
-                Other
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
+        <Router>
+          <div className={styles.gridWidth}>
+            {/* <Route path="/about" exact component={About}/> */}
+            <Route path="/project/:title" />
+            <Route path="/projects/" />
+            <Route path="/about/" exact component={About} />
+            <Route path="/other/"/>
+            <Route path="/" exact component={Home}/>
+          </div>
+        </Router>
       </header>
     </div>
   );

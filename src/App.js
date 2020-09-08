@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './index.css'
 import './App.css';
 import About from './components/About'
 import Home from './components/Home'
+import Other from './components/Other'
 import styles from "./App.module.css"
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
+import Projects from './components/Projects';
+
 
 // What we need: 
 // About me
@@ -22,16 +22,15 @@ function App() {
   //  color of the "ASSET": #f7f2e8
   return (
     <div>
-      {/* <Sidebar></Sidebar> */}
       <header className={styles.backgroundImage}>
         <Router>
           <div className={styles.gridWidth}>
             {/* <Route path="/about" exact component={About}/> */}
             <Route path="/project/:title" />
-            <Route path="/projects/" />
+            <Route path="/projects/" exact component={Projects}/>
             <Route path="/about/" exact component={About} />
-            <Route path="/other/"/>
-            <Route path="/" exact component={Home}/>
+            <Route path="/other/" exact component={Other}/>
+            <Route path="/Home" exact component={Home}/>
           </div>
         </Router>
       </header>

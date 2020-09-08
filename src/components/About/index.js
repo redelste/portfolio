@@ -3,12 +3,6 @@ import Sidebar from '../Sidebar'
 import React from 'react';
 // import styles from './home.module.css';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 
 

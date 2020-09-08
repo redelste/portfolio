@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.07 417.69"><defs><style>.cls-1{fill:#f7f2e8;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,0H312.39V77.22H91.84v89.51H294.26V238.1H91.84V340.47H317.07v77.22H0Z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.07 417.69" id="big-e">
+    <defs>
+        <style>.cls-1 {
+                fill: #f7f2e8;
+                }
+
+        </style>
+
+        <linearGradient id="left-to-right">
+            <stop offset="0" stop-color="#f7f2e8">
+                <animate dur="2s" attributeName="offset" fill="freeze" from="0" to="1" />
+            </stop>
+            <stop offset="0" stop-color="#fff">
+                <animate dur="2s" attributeName="offset" fill="freeze" from="0" to="1" />
+            </stop>
+            
+        </linearGradient>
+    </defs>
+    
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path  stroke="#f0f0f0" fill="url(#left-to-right)" stroke-width="1" opacity="1" class="path" d="M0,0H312.39V77.22H91.84v89.51H294.26V238.1H91.84V340.47H317.07v77.22H0Z"/>
+        </g>
+    </g>
+</svg>
+
+
+

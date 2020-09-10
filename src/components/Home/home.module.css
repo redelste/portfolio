@@ -12,3 +12,9 @@
     color: white;
     font-family: 'Arimo', sans-serif;
 }
+
+.square {
+    width: 210px;
+    height: 210px;
+    background-color: red;
+}

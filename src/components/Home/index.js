@@ -2,7 +2,7 @@
 import { Grid } from '@material-ui/core';
 import Sidebar from '../Sidebar'
 import React from 'react';
-// import styles from './home.module.css';
+import styles from './home.module.css';
 
 import {
     Link
@@ -28,14 +28,18 @@ const Home = () => {
                         </Grid>
                     </Grid>
                     <Grid container justify="center" style={{ marginTop: "-50px" }}>
-                        <Grid item  xs={4}>
-                            <Link to={{ pathname: `/about/` }}> About Me </Link>
+                        <Grid item xs={4}>
+                            <Link to={{ pathname: `/About/` }}>
+                                <div>
+                                    About Me
+                                </div>
+                            </Link>
                         </Grid>
                         <Grid item xs={4}>
-                        <Link to={{ pathname: `/projects/` }}> Projects </Link>
-                    </Grid>
+                            <Link to={{ pathname: `/Projects/` }}> Projects </Link>
+                        </Grid>
                         <Grid item xs={4}>
-                            <Link to={{pathname: `/other/`}}> Other </Link>
+                            <Link to={{ pathname: `/Other/` }}> Other </Link>
                         </Grid>
                     </Grid>
                 </Grid>

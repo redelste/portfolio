@@ -52,7 +52,7 @@ export default function Sidebar() {
           <ListItem button key={text}>
 
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <Link to={{ pathname: `${text}` }}>
+            <Link to={{ pathname: `/${text}/` }}>
               <ListItemText primary={text} />
             </Link>
           </ListItem>

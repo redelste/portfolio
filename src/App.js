@@ -8,6 +8,7 @@ import styles from "./App.module.css"
 import {
   BrowserRouter as Router,
   Route,
+  Redirect
 } from "react-router-dom";
 import Projects from './components/Projects';
 
@@ -26,10 +27,11 @@ function App() {
         <Router>
           <div className={styles.gridWidth}>
             {/* <Route path="/about" exact component={About}/> */}
-            <Route path="/project/:title" />
-            <Route path="/projects/" exact component={Projects}/>
-            <Route path="/about/" exact component={About} />
-            <Route path="/other/" exact component={Other}/>
+            <Redirect exact from="/" to="/Home" />
+            <Route path="/Project/:title" />
+            <Route path="/Projects/" exact component={Projects}/>
+            <Route path="/About/" exact component={About} />
+            <Route path="/Other/" exact component={Other}/>
             <Route path="/Home" exact component={Home}/>
           </div>
         </Router>

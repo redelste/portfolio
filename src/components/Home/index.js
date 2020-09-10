@@ -18,28 +18,29 @@ const Home = () => {
                 <Grid item xs={6} style={{ color: "black" }}>
                 </Grid>
                 {/* col 2 */}
-                <Grid container xs={6} style={{ color: "black", height: "100vh" }} justify="flex-Start">
-                    <Grid container justify="center" alignItems="flex-start" style={{ paddingTop: "10px" }}>
+                <Grid container xs={6} style={{ color: "black", height: "100vh" }} alignItems="flex-start" justify="flex-Start">
+                    <Grid container justify="center" alignItems="center" style={{ paddingTop: "10px" }}>
                         <Grid item xs={4}>
                             <Sidebar></Sidebar>
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid className={styles.titleMain} item xs={8}>
+                        {/*  */}
                             Ryan Edelstein
                         </Grid>
                     </Grid>
-                    <Grid container justify="center" style={{ marginTop: "-50px" }}>
+                    <Grid container justify="center">
                         <Grid item xs={4}>
-                            <Link to={{ pathname: `/About/` }}>
-                                <div>
-                                    About Me
-                                </div>
+                            <Link className={styles.buttonAbout} to={{ pathname: `/About/` }}>
+                                About Me
                             </Link>
                         </Grid>
                         <Grid item xs={4}>
-                            <Link to={{ pathname: `/Projects/` }}> Projects </Link>
+                            <Link className={styles.buttonProjects} to={{ pathname: `/Projects/` }}>
+                                Projects
+                            </Link>
                         </Grid>
                         <Grid item xs={4}>
-                            <Link to={{ pathname: `/Other/` }}> Other </Link>
+                            <Link className={styles.buttonProjects} to={{ pathname: `/Other/` }}> Other </Link>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -16,12 +16,12 @@ const Projects = () => {
                 <Grid item xs={6} style={{ color: "black" }}>
                 </Grid>
                 {/* col 2 */}
-                <Grid container xs={6} style={{ color: "black", height: "100vh" }} justify="flex-Start">
-                    <Grid container justify="center" alignItems="flex-start" xs={9} style={{ paddingTop: "10px" }}>
+                <Grid container xs={6} style={{ color: "black", height: "100vh" }} alignItems="flex-start" justify="flex-Start">
+                    <Grid container justify="center" alignItems="center" style={{ paddingTop: "10px" }}>
                         <Grid item xs={4}>
                             <Sidebar></Sidebar>
                         </Grid>
-                        <Grid item xs={8} style={{position: "relative", paddingLeft: "7%"}}>
+                        <Grid className={styles.titleMain} item xs={8} style={{position: "relative", paddingLeft: "7%"}}>
                             Projects
                         </Grid>
                         <Grid item xs={4}>

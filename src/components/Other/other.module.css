@@ -1,17 +1,16 @@
 .projectIcon {
-    width: 210px;
-    height: 210px;
+    width:90%;
+    height: 90%;
     border-radius: 15%;
-    box-shadow: 10px 10px 15px 1px #1111;
+    box-shadow: -8px 10px 35px 18px #1111;
+    transition: 0.5s;
+
 }
 
 .projectIcon:hover {
     position: relative;
-    width: 300px;
-    height: 300px;
+    transform: scale(1.5);
     display: block;
-    opacity: 0.6;
-    transition: 0.5s;
 }
 
 @media (min-width:960px) {
@@ -20,3 +19,23 @@
         max-height: 310px;
     }
 }
+
+
+.gridAdjust{
+    padding-top: 10%;
+    padding-right:8%;
+}
+
+
+.titleMain {
+    display: inline-block;
+    /* margin: 1em; */
+    text-transform: uppercase;
+    padding: 1em 0.0em;
+    background: none;
+    color:black;  
+    font-weight: bold;
+    /* position: relative; */
+    transition:color 0.25s ease;
+    /* border:3px solid black; */
+  }

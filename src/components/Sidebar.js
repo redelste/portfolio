@@ -66,7 +66,9 @@ export default function Sidebar() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>Menu</Button>
+          <Button onClick={toggleDrawer(anchor, true)} style={{
+            fontSize: "100%", padding: "0em 0.0em", textAlign: "left",
+          }}>Menu</Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

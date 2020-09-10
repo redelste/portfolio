@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 import Sidebar from '../Sidebar'
 import React from 'react';
-// import styles from './home.module.css';
+import styles from './about.module.css';
 
 
 
@@ -15,12 +15,12 @@ const About = () => {
                 <Grid item xs={6} style={{ color: "black" }}>
                 </Grid>
                 {/* col 2 */}
-                <Grid container xs={6} style={{ color: "black", height: "100vh" }} justify="flex-Start">
-                    <Grid container justify="center" alignItems="flex-start" xs={9} style={{ paddingTop: "10px" }}>
+                <Grid container xs={6} style={{ color: "black", height: "100vh" }} alignItems="flex-start" justify="flex-Start">
+                    <Grid container justify="center" alignItems="center" style={{ paddingTop: "10px" }}>
                         <Grid item justify="flex-start" xs={4}>
                             <Sidebar></Sidebar>
                         </Grid>
-                        <Grid item xs={8}>
+                        <Grid className={styles.titleMain} item xs={8}>
                             About Me
                         </Grid>
                     </Grid>

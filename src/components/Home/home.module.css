@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-
-.backgroundImage{
+.backgroundImage {
     background-repeat: no-repeat;
     background-color: white;
     min-height: 100vh;
@@ -18,3 +17,80 @@
     height: 210px;
     background-color: red;
 }
+
+.buttonAbout {
+    display: inline-block;
+    /* margin: 1em; */
+    text-transform: uppercase;
+    padding: 1em 0.0em;
+    background: none;
+    color:darkblue;  
+    font-weight: bold;
+    /* position: relative; */
+    transition:color 0.25s ease;
+    /* border:3px solid black; */
+  }
+
+
+.buttonAbout:hover {
+    color: blue
+}
+
+.buttonAbout::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transform-origin: left;
+    transition: width 0.25s ease;
+    z-index: -1;
+}
+
+.buttonProjects {
+    display: inline-block;
+    /* margin: 1em; */
+    text-transform: uppercase;
+    padding: 1em 0em;
+    background: none;
+    color:darkblue;  
+    font-weight: bold;
+    position: relative;
+    transition:color 0.25s ease;
+    /* border:3px solid black; */
+  }
+
+
+.buttonProjects:hover {
+    color: blue
+}
+
+.buttonProjects::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transform-origin: left;
+    transition: width 0.25s ease;
+    z-index: -1;
+}
+
+
+
+.titleMain {
+    display: inline-block;
+    /* margin: 1em; */
+    text-transform: uppercase;
+    padding: 1em 0.0em;
+    background: none;
+    color:black;  
+    font-weight: bold;
+    /* position: relative; */
+    transition:color 0.25s ease;
+    /* border:3px solid black; */
+  }

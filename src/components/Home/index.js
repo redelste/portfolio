@@ -28,7 +28,7 @@ const Home = () => {
                             Ryan Edelstein
                         </Grid>
                     </Grid>
-                    <Grid container justify="center">
+                    <Grid className={styles.linkGroup} container justify="center">
                         <Grid item xs={4}>
                             <Link className={styles.buttonAbout} to={{ pathname: `/About/` }}>
                                 About Me
